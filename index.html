@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa TCC - Auxílio aos Estudos com IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #007bff;
+            --background-color: #f8f9fa;
+            --card-background: #ffffff;
+            --text-color: #343a40;
+            --light-text-color: #6c757d;
+            --border-color: #e2e6ea;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px; /* Increased max-width for a more spacious feel */
+            width: 100%;
+            margin: auto;
+            background: var(--card-background);
+            padding: 40px; /* Increased padding */
+            border-radius: 12px; /* Slightly more rounded corners */
+            box-shadow: var(--shadow);
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 2.2em; /* Larger heading */
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: 1.6em;
+            border-bottom: 2px solid var(--border-color); /* Subtle underline for sections */
+            padding-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            font-size: 1em;
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .version-section {
+            background-color: #eaf3ff; /* Lighter background for sections */
+            padding: 25px; /* Increased padding */
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .version-section h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        ul {
+            list-style-type: none; /* Remove default bullet points */
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #004494;
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8em;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-size: 1.4em;
+                margin-top: 25px;
+            }
+            .version-section {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Olá! Gostaria de ajudar na pesquisa do meu TCC?</h1>
+        <p>Este é um convite para participar da pesquisa intitulada <span class="highlight">“Explorando o uso de prompts para IA generativa no auxílio aos estudos: Desenvolvimento de um aplicativo educacional com Flutter”</span>, conduzida por Isac Maximo Alves de Moura, discente do curso de Engenharia de Software da Universidade Federal do Ceará – Campus Russas. A pesquisa segue as diretrizes éticas estabelecidas pela Resolução nº 466/2012, do Conselho Nacional de Saúde, e tem natureza acadêmica, sendo realizada de forma voluntária e sem qualquer ônus ou prejuízo aos(às) participantes.</p>
+
+        <h2>Objetivo do Estudo</h2>
+        <p>O objetivo do estudo é analisar o perfil, as percepções e as experiências de usuários no uso de ferramentas de Inteligência Artificial (IA) generativa, com ênfase na interação por meio de prompts personalizados. Além disso, busca-se avaliar funcionalidades de um aplicativo com finalidade educacional.</p>
+
+        <h2>Como Participar?</h2>
+        <p>Caso concorde em participar da pesquisa, você será conduzido(a) a seguir o seguinte procedimento: o preenchimento de um questionário eletrônico, que será disponibilizado por meio da plataforma Google Forms. O questionário contempla questões relacionadas ao uso de ferramentas de IA generativa, às experiências com prompts personalizados e à avaliação do aplicativo educacional.</p>
+
+        <p>Atualmente, existem duas versões do sistema: <span class="highlight">Android</span> e <span class="highlight">Web</span>.</p>
+
+        <h2>Sobre o Aplicativo</h2>
+        <p>O aplicativo utiliza formato de chatbot, que emprega prompts personalizados para atuar como um intermediador entre o usuário e o sistema em suas pesquisas. O intuito é usar a IA guiada para auxiliar nos estudos, de forma complementar ao ensino tradicional, não um substituto.</p>
+        <p>Tem como objetivo mitigar a dependência de chatbots tradicionais, apresentando conteúdo que estimula a pesquisa em outras fontes. Ao realizar uma pesquisa, será exibido um resumo breve sobre o assunto, livros referentes, termos para pesquisar em artigos, e a possibilidade de explorar sites relacionados.</p>
+
+        ---
+
+        <div class="version-section">
+            <h2>Versão Android</h2>
+            <p>Para testar a versão Android, por favor, envie o e-mail que utiliza na Play Store para um de meus contatos, pois é um aplicativo restrito para teste interno.</p>
+            <h3>Contatos:</h3>
+            <ul>
+                <li>Email: <a href="mailto:isacmaximomoura@gmail.com">isacmaximomoura@gmail.com</a></li>
+                <li>WhatsApp: <a href="https://wa.me/5585999305313" target="_blank">(85) 99930-5313</a></li>
+            </ul>
+        </div>
+
+        <div class="version-section">
+            <h2>Versão Web</h2>
+            <p>Para testar a versão web, acesse o link abaixo utilizando um notebook ou computador:</p>
+            <p><a href="http://isacdev.ip-ddns.com:4200/" target="_blank" class="button">Acessar Versão Web</a></p>
+        </div>
+
+        <h2>Após testar, por favor, preencha o formulário:</h2>
+        <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOUdvYI7gqR0HCzfEySli8ym6B63kqwAdHe_vLmNwM5WWmeg/viewform" target="_blank" class="button">Preencher Formulário da Pesquisa</a></p>
+
+        <p>Obrigado pela atenção!</p>
+    </div>
+</body>
+</html>
